@@ -1,0 +1,36 @@
+.GReen {
+    height: 8rem;
+}
+
+.img-caption {
+    position: absolute;
+    top: 7.1rem;
+    opacity: 0;
+    height: 8.1rem;
+    width: 16.25rem;
+    transition: .5s ease;
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+span {
+    margin-bottom: 1rem;
+}
+
+.projectButton {
+    color: blue;
+    border-radius: 5px;
+}
+
+.view {
+    text-decoration: none;
+    color: black;
+}
+
+.img-thumb:hover .img-caption {
+    opacity: 1;
+}
