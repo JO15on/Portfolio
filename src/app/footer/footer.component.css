@@ -1,0 +1,19 @@
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.github {
+    height: 4rem;
+}
+
+.linkedin {
+    height: 4rem;
+}
+
+a:hover {
+    color: gray;
+    opacity: .5;
+}

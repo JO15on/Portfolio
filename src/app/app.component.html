@@ -1,22 +1,40 @@
-<body>
-  <header>
-    <div class="header">
-      <h1><a routerLink=''>Jonathan Olson</a></h1> 
-      <p class="description">Front-End Developer | Digital Marketer</p>  
-    </div>
-  </header>
+<nav>
+  <h1 routerLink=''>Jonathan Olson</h1>
+  <div *ngIf="!(mobile | async).matches">
+    <ul>
+      <a routerLink='' routerLinkActive="active">Home</a>
+      <a routerLink='/About' routerLinkActive="active">About</a>
+      <a routerLink='/SoftwareProject' routerLinkActive="active">Software Project</a>
+      <a routerLink='/GraphicDesign' routerLinkActive="active">Graphic Design</a>
+      <a routerLink='/SocialMedia' routerLinkActive="active">Social Media</a>
+      <a routerLink='/Photography' routerLinkActive="active">Photography</a>
+      <a routerLink='/Contact' routerLinkActive="active">Contact</a>
+    </ul>
+  </div>
 
-  <main>
+  <div *ngIf="(mobile | async).matches" class="menu-container">
+    <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
+  </div>
+</nav>
+
+<mat-sidenav-container>
+  <mat-sidenav #sidenav mode ="over" [(opened)]="opened" position='end' class="sidenav">
+    <h2>Menu</h2>
+    <ul>
+      <a routerLink='' routerLinkActive="active" (click)="sidenav.close()">Home</a>
+      <a routerLink='/About' routerLinkActive="active" (click)="sidenav.close()">About</a>
+      <a routerLink='/SoftwareProject' routerLinkActive="active" (click)="sidenav.close()">Software Project</a>
+      <a routerLink='/GraphicDesign' routerLinkActive="active" (click)="sidenav.close()">Graphic Design</a>
+      <a routerLink='/SocialMedia' routerLinkActive="active" (click)="sidenav.close()">Social Media</a>
+      <a routerLink='/Photography' routerLinkActive="active" (click)="sidenav.close()">Photography</a>
+      <a routerLink='/Contact' routerLinkActive="active" (click)="sidenav.close()">Contact</a>
+    </ul>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
     <router-outlet></router-outlet>
-  </main>
+  </mat-sidenav-content>
 
-  <footer class="footer">
-    <div>
-      <a href="https://github.com/JO15on" target="_blank"><img class="github" src="assets/github.png"/></a>
-    </div>
+</mat-sidenav-container>
 
-    <div>
-      <a href="https://www.linkedin.com/in/jonathanolson15/" target="_blank"><img class="linkedin" src="assets/linkedin.png"/></a>
-    </div>
-  </footer>
-</body>
+<app-footer></app-footer>

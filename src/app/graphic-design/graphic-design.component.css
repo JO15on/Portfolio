@@ -1,0 +1,13 @@
+.graphic {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    margin: 1rem 1rem 0 1rem;
+    height: 15em;
+    box-shadow: 2px 2px gray;
+}

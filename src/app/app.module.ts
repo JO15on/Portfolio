@@ -11,6 +11,14 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { PhotographyComponent } from './photography/photography.component';
 import { NgxTweetModule } from "ngx-tweet";
+import { FooterComponent } from './footer/footer.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { LayoutModule } from '@angular/cdk/layout';
+
+import { MatIconModule, } from '@angular/material/icon';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatInputModule } from '@angular/material/input'
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 
 @NgModule({
@@ -22,12 +30,19 @@ import { NgxTweetModule } from "ngx-tweet";
     SoftwareProjectComponent,
     AboutComponent,
     ContactComponent,
-    PhotographyComponent
+    PhotographyComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgxTweetModule
+    NgxTweetModule,
+    BrowserAnimationsModule,
+    MatIconModule,
+    MatSidenavModule,
+    MatFormFieldModule,
+    MatInputModule,
+    LayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]

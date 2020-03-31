@@ -34,3 +34,8 @@ span {
 .img-thumb:hover .img-caption {
     opacity: 1;
 }
+
+.img-thumb{
+    display: block;
+    
+}
