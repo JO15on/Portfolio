@@ -1,19 +1,7 @@
-<body>
-    <div>
-        <div class="img-thumb">
-            <img class="GReen" src="assets/GReen_Project.jpg"/>
-            <div class="img-caption">
-                <h3>GReen</h3>
-                <span>Angular with RESTful API</span>
-                <button class="projectButton">
-                    <a href="https://jo15on.github.io/GReen/" title="GReen" alt="GReen Project" class="view">View Project</a>
-                </button>
-            </div>
-        </div>
-        <p><br>Nearly $56 million worth of recyclable items has been thrown into West Michigan landfills. Plastics, metals, textiles, paper; all of these items can bring value to our community. With GReen, we’ve created a tool to help our fellow Grand Rapids residents live greener.<br>
-            <br>The city of Grand Rapids is continuing to invest in a more sustainable future. With the infrastructure in place, it’s now a matter of awareness and education. We had the unique opportunity to look at our own experiences and draw from those to problem solve for better user experience. As a team comprised of Grand Rapids residents, we wanted to use our passion for our city to benefit our planet. This was an exciting opportunity to contribute to both.<br> 
-            <br>GReen educates Grand Rapids residents by helping them confirm what can be recycled, appropriate ways to dispose of recyclables, locate nearby recycling centers, order their recycling services, and determine their pick-up days.<br>
-        </p>
-    </div>
+<h1>Software Projects</h1>
+<div>
+    <!-- <img class="image" src={{projects.image}}/> -->
+    <app-project *ngFor="let project of projects" [project]="project"></app-project>
+</div>
 
-</body>
+
