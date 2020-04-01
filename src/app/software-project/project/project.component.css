@@ -1,0 +1,67 @@
+.img-caption {
+    position: absolute;
+    top: 4.6rem;
+    opacity: 0;
+    height: 8.1rem;
+    width: 16.25rem;
+    transition: .5s ease;
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+span {
+    margin-bottom: 1rem;
+}
+
+.projectButton {
+    color: blue;
+    border-radius: 5px;
+}
+
+.view {
+    text-decoration: none;
+    color: black;
+}
+
+.img-thumb:hover .img-caption {
+    opacity: .9;
+}
+
+.img-thumb{
+    display: block;
+}
+
+.image {
+    height: 8rem;
+    margin-bottom: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media only screen and (min-width: 600px){
+    .image {
+        height: 18rem;
+    }
+
+    .img-caption {
+        top: 7rem;
+        height: 18rem;
+        width: 36.7rem;
+    }
+}

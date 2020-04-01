@@ -1,40 +1,94 @@
-header {
+nav {
+    background: blue;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.description {
-    margin-top: -1rem;
-}
-
-a {
-    text-decoration: none;
+    justify-content: space-between;
 }
 
 main {
     flex: 1;
 }
 
-.footer {
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: #EEEEEE;
+    margin: 0;
+    padding: 1em;
+    align-self: center;
+    cursor: pointer;
+}
+
+ul {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    bottom: 0;
-    position: sticky;
+    flex-direction: column;
 }
 
-.github {
-    height: 4rem;
+a {
+    text-decoration: none;
+    color: blue;
+    margin: 1rem;
+    position: relative;
+    font-size: 18px;
 }
 
-.linkedin {
-    height: 4rem;
+a:hover {
+    color: yellow;
+}
+
+.active {
+    color: black;
+}
+
+mat-icon {
+    color: #EEE;
+    cursor: pointer;
+}
+
+mat-icon:hover {
+    color: #AAA;
+}
+
+mat-sidenav-content {
+    display: inline;
+}
+
+mat-sidenav {
+    height: 26rem;
+}
+
+.menu-container {
+    display: flex;
+    align-items: center;
+    padding-right: 1rem;
+}
+
+.side-bar-list {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+}
+
+.side-bar-list a {
+    color: #000080;
+}
+
+.sidenav {
+    background: rgb(248, 248, 248);
+    box-shadow: -12px 0px 16px #00000042;
+}
+
+h2 {
+    text-align: center;
+    padding-right: 3rem;
+    padding-left: 3rem;
+}
+
+@media only screen and (min-width: 600px) {
+    ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    a {
+        color: white;
+    }
 }

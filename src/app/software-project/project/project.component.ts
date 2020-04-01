@@ -9,7 +9,9 @@ import { IProject } from 'src/app/project';
 export class ProjectComponent implements OnInit {
   @Input() project : IProject
 
-  constructor() { }
+  constructor() {
+    console.log(this.project);
+   }
 
   ngOnInit(): void {
   }

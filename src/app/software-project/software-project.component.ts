@@ -26,7 +26,9 @@ export class SoftwareProjectComponent implements OnInit {
   }
   ];
 
-  constructor() { }
+  constructor() { 
+    console.log(this.projects);
+  }
 
   ngOnInit() : void {
   }

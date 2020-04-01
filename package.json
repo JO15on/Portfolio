@@ -24,6 +24,7 @@
     "clay-facebook-post": "0.0.5",
     "ngtweet": "^1.0.0",
     "ngx-tweet": "^2.0.3",
+    "ngx-twitter-timeline": "^0.1.5",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"

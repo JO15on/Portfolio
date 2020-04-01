@@ -1,12 +1,30 @@
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .social_media {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    flex-wrap: wrap;
+}
+
+.social_media>iframe{
+    max-width: 100%;
+    max-height: 100%
 }
 
 .social {
-    margin-left: 2rem;
     margin-right: 2rem;
     margin-top: 2rem;
+    margin-left: 2rem;
+}
+
+@media only screen and (min-width: 600px) {
+
+    .social_media {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 }
