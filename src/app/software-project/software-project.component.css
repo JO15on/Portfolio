@@ -5,6 +5,10 @@
     margin-top: 1rem;
 }
 
+.app {
+    overflow: auto;
+}
+
 app-project {
     display: flex;
     flex: 1;

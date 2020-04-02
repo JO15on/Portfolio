@@ -42,8 +42,8 @@ span {
 
 a {
     text-decoration: none;
-    color: black;
-    background-color: white;
+    color: white;
+    background-color: blue;
     padding: 1rem;
     border-radius: 5px;
 }
