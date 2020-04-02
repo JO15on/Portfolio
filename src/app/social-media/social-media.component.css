@@ -10,6 +10,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    overflow: hidden;
 }
 
 .social {
@@ -18,10 +19,19 @@
     margin-left: 2rem;
 }
 
+img {
+    height: 16rem;
+}
+
 @media only screen and (min-width: 600px) {
 
     .social_media {
         flex-direction: row;
         flex-wrap: wrap;
     }
+
+img {
+    height: 40rem;
+}
+
 }
