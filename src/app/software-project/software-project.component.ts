@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, APP_ID } from '@angular/core';
 import { IProject } from 'src/app/project';
 
 @Component({
@@ -14,7 +14,7 @@ export class SoftwareProjectComponent implements OnInit {
       title: "GReen",
       desc: "Angular with RESTful APIs",
       url: "https://jo15on.github.io/GReen/",
-      full: "Nearly $56 million worth of recyclable items has been thrown into West Michigan landfills. Plastics, metals, textiles, paper; all of these items can bring value to our community. With GReen, we’ve created a tool to help our fellow Grand Rapids residents live greener. The city of Grand Rapids is continuing to invest in a more sustainable future. With the infrastructure in place, it’s now a matter of awareness and education. We had the unique opportunity to look at our own experiences and draw from those to problem solve for better user experience. As a team comprised of Grand Rapids residents, we wanted to use our passion for our city to benefit our planet. This was an exciting opportunity to contribute to both. GReen educates Grand Rapids residents by helping them confirm what can be recycled, appropriate ways to dispose of recyclables, locate nearby recycling centers, order their recycling services, and determine their pick-up days."
+      full: "My team and I created an app using Angular 9 framework with RESTful APIs that we utilized from the City of Grand Rapids and Google Map.  We wanted to educate the Grand Rapids residents by helping them confirm what can be recycled, appropriate ways to dispose recycables, locate nearby recycling centers, order bin services and determine their trash/recycling pick-up days."
     },
 
   {
