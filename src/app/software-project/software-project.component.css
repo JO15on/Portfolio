@@ -6,7 +6,7 @@
 }
 
 .app {
-    overflow: auto;
+    overflow: hidden;
     padding: 2px;
 }
 
@@ -18,11 +18,12 @@ app-project {
     border-radius: 1rem;
     background: #ffffff80;
     box-shadow: 0px 0px 3px #AAA;
-    width: 78vw;
 }
 
 
 @media only screen and (min-width: 600px){
+    .app {
+    }
 
 }
 
@@ -30,13 +31,26 @@ app-project {
 
     .app {
         display: flex;
-        flex-direction: row;
         justify-content: space-between;
         width: 100%;
     }
+}
 
-    app-project {
-        min-width: 340px;
-        min-height: 340px;
+@media only screen and (min-width: 1024px) {
+    .app {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    
     }
+}
+
+@media only screen and (min-width: 1440px) {
+
+    .app {
+        display: flex;
+        flex-direction: row;
+        width: 100%
+    }
+
 }

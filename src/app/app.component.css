@@ -2,8 +2,8 @@ nav {
     background: blue;
     display: flex;
     justify-content: space-between;
-    width: 100%;
-}
+    width: 100vw;
+}   
 
 h1 {
     font-family: 'Montserrat', sans-serif;
@@ -46,7 +46,6 @@ mat-icon:hover {
 
 mat-sidenav-content {
     display: inline;
-    flex: 1;
 }
 
 mat-sidenav {
