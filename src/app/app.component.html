@@ -1,40 +1,42 @@
-<nav>
-  <h1 routerLink=''>Jonathan Olson</h1>
-  <div *ngIf="!(mobile | async).matches">
-    <ul>
-      <a routerLink='' routerLinkActive="active">Home</a>
-      <a routerLink='/About' routerLinkActive="active">About</a>
-      <a routerLink='/SoftwareProject' routerLinkActive="active">Software Project</a>
-      <a routerLink='/GraphicDesign' routerLinkActive="active">Graphic Design</a>
-      <a routerLink='/SocialMedia' routerLinkActive="active">Social Media</a>
-      <a routerLink='/Photography' routerLinkActive="active">Photography</a>
-      <a routerLink='/Contact' routerLinkActive="active">Contact</a>
-    </ul>
-  </div>
-
-  <div *ngIf="(mobile | async).matches" class="menu-container">
-    <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
-  </div>
-</nav>
-
-<mat-sidenav-container>
-  <mat-sidenav #sidenav mode ="over" [(opened)]="opened" position='end' class="sidenav">
-    <h2>Menu</h2>
-    <ul>
-      <a routerLink='' routerLinkActive="active" (click)="sidenav.close()">Home</a>
-      <a routerLink='/About' routerLinkActive="active" (click)="sidenav.close()">About</a>
-      <a routerLink='/SoftwareProject' routerLinkActive="active" (click)="sidenav.close()">Software Project</a>
-      <a routerLink='/GraphicDesign' routerLinkActive="active" (click)="sidenav.close()">Graphic Design</a>
-      <a routerLink='/SocialMedia' routerLinkActive="active" (click)="sidenav.close()">Social Media</a>
-      <a routerLink='/Photography' routerLinkActive="active" (click)="sidenav.close()">Photography</a>
-      <a routerLink='/Contact' routerLinkActive="active" (click)="sidenav.close()">Contact</a>
-    </ul>
-  </mat-sidenav>
-
-  <mat-sidenav-content>
-    <router-outlet></router-outlet>
-  </mat-sidenav-content>
-
-</mat-sidenav-container>
-
-<app-footer></app-footer>
+<body>
+  <nav>
+    <h1 routerLink=''>Jonathan Olson</h1>
+    <div *ngIf="!(mobile | async).matches">
+      <ul>
+        <a routerLink='' routerLinkActive="active">Home</a>
+        <a routerLink='/About' routerLinkActive="active">About</a>
+        <a routerLink='/SoftwareProject' routerLinkActive="active">Software Project</a>
+        <a routerLink='/GraphicDesign' routerLinkActive="active">Graphic Design</a>
+        <a routerLink='/SocialMedia' routerLinkActive="active">Social Media</a>
+        <a routerLink='/Photography' routerLinkActive="active">Photography</a>
+        <a routerLink='/Contact' routerLinkActive="active">Contact</a>
+      </ul>
+    </div>
+  
+    <div *ngIf="(mobile | async).matches" class="menu-container">
+      <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
+    </div>
+  </nav>
+  
+  <mat-sidenav-container>
+    <mat-sidenav #sidenav mode ="over" [(opened)]="opened" position='end' class="sidenav">
+      <h2>Menu</h2>
+      <ul>
+        <a routerLink='' routerLinkActive="active" (click)="sidenav.close()">Home</a>
+        <a routerLink='/About' routerLinkActive="active" (click)="sidenav.close()">About</a>
+        <a routerLink='/SoftwareProject' routerLinkActive="active" (click)="sidenav.close()">Software Project</a>
+        <a routerLink='/GraphicDesign' routerLinkActive="active" (click)="sidenav.close()">Graphic Design</a>
+        <a routerLink='/SocialMedia' routerLinkActive="active" (click)="sidenav.close()">Social Media</a>
+        <a routerLink='/Photography' routerLinkActive="active" (click)="sidenav.close()">Photography</a>
+        <a routerLink='/Contact' routerLinkActive="active" (click)="sidenav.close()">Contact</a>
+      </ul>
+    </mat-sidenav>
+    
+    <mat-sidenav-content>
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  
+  </mat-sidenav-container>
+  
+  <app-footer></app-footer>
+</body>

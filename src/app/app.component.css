@@ -1,3 +1,8 @@
+body {
+    height: 100vh;
+    border: 1px solid transparent;
+}
+
 nav {
     background: blue;
     display: flex;
@@ -46,6 +51,7 @@ mat-icon:hover {
 
 mat-sidenav-content {
     display: inline;
+    flex: 1;
 }
 
 mat-sidenav {
