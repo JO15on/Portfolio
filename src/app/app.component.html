@@ -1,7 +1,7 @@
 <body>
   <nav>
     <h1 routerLink=''>Jonathan Olson</h1>
-    <div *ngIf="!(mobile | async).matches">
+    <div class="closed" *ngIf="!(tablet | async).matches">
       <ul>
         <li><a routerLink='' routerLinkActive="active">Home</a></li>
         <li><a routerLink='/About' routerLinkActive="active">About</a></li>
@@ -13,7 +13,7 @@
       </ul>
     </div>
   
-    <div *ngIf="(mobile | async).matches" class="menu-container">
+    <div *ngIf="(tablet | async).matches" class="menu-container">
       <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
     </div>
   </nav>
@@ -22,13 +22,13 @@
     <mat-sidenav #sidenav mode ="over" [(opened)]="opened" position='end' class="sidenav">
       <h2>Menu</h2>
       <ul>
-        <a routerLink='' routerLinkActive="active" (click)="sidenav.close()">Home</a>
-        <a routerLink='/About' routerLinkActive="active" (click)="sidenav.close()">About</a>
-        <a routerLink='/SoftwareProject' routerLinkActive="active" (click)="sidenav.close()">Software Project</a>
-        <a routerLink='/GraphicDesign' routerLinkActive="active" (click)="sidenav.close()">Graphic Design</a>
-        <a routerLink='/SocialMedia' routerLinkActive="active" (click)="sidenav.close()">Social Media</a>
-        <a routerLink='/Photography' routerLinkActive="active" (click)="sidenav.close()">Photography</a>
-        <a routerLink='/Contact' routerLinkActive="active" (click)="sidenav.close()">Contact</a>
+        <li><a routerLink='' routerLinkActive="active" (click)="sidenav.close()">Home</a></li>
+        <li><a routerLink='/About' routerLinkActive="active" (click)="sidenav.close()">About</a></li>
+        <li><a routerLink='/SoftwareProject' routerLinkActive="active" (click)="sidenav.close()">Software Project</a></li>
+        <li><a routerLink='/GraphicDesign' routerLinkActive="active" (click)="sidenav.close()">Graphic Design</a></li>
+        <li><a routerLink='/SocialMedia' routerLinkActive="active" (click)="sidenav.close()">Social Media</a></li>
+        <li><a routerLink='/Photography' routerLinkActive="active" (click)="sidenav.close()">Photography</a></li>
+        <li><a routerLink='/Contact' routerLinkActive="active" (click)="sidenav.close()">Contact</a></li>
       </ul>
     </mat-sidenav>
     

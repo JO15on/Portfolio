@@ -1,14 +1,17 @@
 body {
-    height: 100vh;
-    border: 1px solid transparent;
+    height: 100vh;  
 }
 
 nav {
     background: blue;
     display: flex;
     justify-content: space-between;
-    width: 100vw;
 }   
+
+.closed {
+    margin-top: auto;
+    margin-bottom: auto;
+}
 
 h1 {
     font-family: 'Montserrat', sans-serif;
@@ -26,6 +29,7 @@ ul {
 
 li {
     list-style-type: none;
+    margin-bottom: 1rem;
 }
 
 a {
@@ -93,9 +97,38 @@ h2 {
     ul {
         display: flex;
         flex-direction: row;
+        align-content: space-between;
+        margin-bottom: auto;
     }
 
     a {
+        color: blue;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+        margin-bottom: auto;
+    }
+
+    a {
+        color: blue;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    a {
+        font-size: 14px;
         color: white;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        align-content: space-between;
+        margin-bottom: auto;
     }
 }

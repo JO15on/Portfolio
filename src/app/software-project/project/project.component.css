@@ -69,15 +69,25 @@ a {
 @media only screen and (min-width: 1024px){
     .img-caption {
         top: 6rem;
-        height: 18.5rem;
-        width: 36.7rem;
+        height: 7.3rem;
+        width: 14.3rem;
+    }
+
+    .image {
+        height: 7rem;
+        margin-bottom: 1rem;
     }
 }
 
 @media only screen and (min-width: 1440px){
     .img-caption {
         top: 6rem;
-        height: 18.5rem;
-        width: 36.7rem;
+        height: 15.2rem;
+        width: 30.7rem;
+    }
+
+    .image {
+        height: 15rem;
+        margin-bottom: 1rem;
     }
 }

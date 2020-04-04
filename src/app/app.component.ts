@@ -10,7 +10,8 @@ import { Observable } from 'rxjs';
 export class AppComponent {
   title = 'Portfolio';
   opened: any;
-  mobile: Observable<BreakpointState> = this.breakpointObserver.observe(Breakpoints.HandsetPortrait)
+  tablet: Observable<BreakpointState> = this.breakpointObserver.observe([Breakpoints.Small, Breakpoints.HandsetPortrait]);
+  mobile: Observable<BreakpointState> = this.breakpointObserver.observe(Breakpoints.HandsetPortrait);
 
   constructor(private breakpointObserver : BreakpointObserver){}
   
