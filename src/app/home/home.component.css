@@ -18,13 +18,13 @@
 }
 
 h1 {
-    font-size: medium;
+    font-size: large;
     text-shadow: 2px 2px 2px black;
 
 }
 
 h3 {
-    font-size: 1em;
+    font-size: .65em;
     width: 100%;
     text-shadow: 2px 2px 2px black;
 }

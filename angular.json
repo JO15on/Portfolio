@@ -121,8 +121,12 @@
           }
         },
         "deploy": {
-          "builder": "angular-cli-ghpages:deploy",
-          "options": {}
+          "builder": "@netlify-builder/deploy:deploy",
+          "options": {
+            "outputPath": "dist/Jon-Portfolio",
+            "netlifyToken": "15",
+            "siteId": ""
+          }
         }
       }
     }
