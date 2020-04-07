@@ -30,8 +30,8 @@ img {
         flex-wrap: wrap;
     }
 
-img {
-    height: 40rem;
-}
+    img {
+        height: 40rem;
+    }
 
 }

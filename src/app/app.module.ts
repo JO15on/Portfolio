@@ -7,7 +7,6 @@ import { HomeComponent } from './home/home.component';
 import { GraphicDesignComponent } from './graphic-design/graphic-design.component';
 import { SocialMediaComponent } from './social-media/social-media.component';
 import { SoftwareProjectComponent } from './software-project/software-project.component';
-import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { PhotographyComponent } from './photography/photography.component';
 import { NgxTweetModule } from "ngx-tweet";
@@ -30,7 +29,6 @@ import { ProjectComponent } from './software-project/project/project.component';
     GraphicDesignComponent,
     SocialMediaComponent,
     SoftwareProjectComponent,
-    AboutComponent,
     ContactComponent,
     PhotographyComponent,
     FooterComponent,
