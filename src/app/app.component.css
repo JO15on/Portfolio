@@ -3,7 +3,7 @@ body {
 }
 
 nav {
-    background: blue;
+    background: dimgray;
     display: flex;
     justify-content: space-between;
 }   
@@ -41,7 +41,7 @@ a {
 }
 
 a:hover {
-    color: yellow;
+    color: gray;
 }
 
 .active {

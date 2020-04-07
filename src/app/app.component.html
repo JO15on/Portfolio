@@ -4,7 +4,6 @@
     <div class="closed" *ngIf="!(tablet | async).matches">
       <ul>
         <li><a routerLink='' routerLinkActive="active">Home</a></li>
-        <li><a routerLink='/About' routerLinkActive="active">About</a></li>
         <li><a routerLink='/SoftwareProject' routerLinkActive="active">Software Project</a></li>
         <li><a routerLink='/GraphicDesign' routerLinkActive="active">Graphic Design</a></li>
         <li><a routerLink='/SocialMedia' routerLinkActive="active">Social Media</a></li>
@@ -23,7 +22,6 @@
       <h2>Menu</h2>
       <ul>
         <li><a routerLink='' routerLinkActive="active" (click)="sidenav.close()">Home</a></li>
-        <li><a routerLink='/About' routerLinkActive="active" (click)="sidenav.close()">About</a></li>
         <li><a routerLink='/SoftwareProject' routerLinkActive="active" (click)="sidenav.close()">Software Project</a></li>
         <li><a routerLink='/GraphicDesign' routerLinkActive="active" (click)="sidenav.close()">Graphic Design</a></li>
         <li><a routerLink='/SocialMedia' routerLinkActive="active" (click)="sidenav.close()">Social Media</a></li>
