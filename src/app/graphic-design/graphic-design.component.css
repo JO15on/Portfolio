@@ -23,4 +23,8 @@ img {
     img {
         height: 30em;
     }
+
+    .unblur {
+        height: 17em;
+    }
 }
