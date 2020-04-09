@@ -3,56 +3,17 @@
     text-align: center;
 }
 
+.image {
+    height: 7rem;
+}
+
 .img-caption {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: black;
-    height: 100%;
-    width: 100%;
-}
-
-.img-thumb {
-    width: 100%;
-    height: 300px;
-    position: relative;
-}
-
-.image {
-    width: 100%;
-    background-position: center;
-    background-size: cover;
-    transition: all 0.3s ease-in-out;
-    opacity: 1;
-}
-
-.img-thumb:hover .image,
-.img-thumb:focus .image {
-    transform: scale(1.02);
-    opacity: 0.5;
-}
-
-.img-thumb:hover .img-caption {
-    color: black;
-}
-
-.img-caption>h3, .img-caption>p, .img-caption>a {
-    visibility: hidden;
-}
-
-.img-caption:hover>h3, .img-caption:hover>p, .img-caption:hover>a {
-    visibility: visible;
-    display: block;
-}
-
-.img-thumb:hover .img-caption>p{
-    font-size: 1.5em;
-    letter-spacing: .02em;
+    margin-bottom: 1rem;
 }
 
 a {
@@ -61,4 +22,61 @@ a {
     background-color: blue;
     padding: 1rem;
     border-radius: 5px;
+}
+
+@media only screen and (min-width: 600px){
+    .image {
+        height: 15rem;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+
+    .img-caption {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 100%;
+        width: 100%;
+    }
+
+    .img-thumb {
+        width: 100%;
+        height: 300px;
+        position: relative;
+    }
+    
+    .image {
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+        transition: all 0.3s ease-in-out;
+        opacity: 1;
+    }
+
+    .img-thumb:hover .image,
+    .img-thumb:focus .image {
+        transform: scale(1.02);
+        opacity: 0.5;
+    }
+    
+    .img-thumb:hover .img-caption {
+        color: black;
+    }
+    
+    .img-caption>h3, .img-caption>p, .img-caption>a {
+        visibility: hidden;
+    }
+    
+    .img-caption:hover>h3, .img-caption:hover>p, .img-caption:hover>a {
+        visibility: visible;
+        display: block;
+    }
+    
+    .img-thumb:hover .img-caption>p{
+        font-size: 1.5em;
+        letter-spacing: .02em;
+    }
+    
 }
