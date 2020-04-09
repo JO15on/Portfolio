@@ -22,10 +22,12 @@ footer {
 
 .github {
     height: 4rem;
+    margin-top: 1rem;
 }
 
 .linkedin {
     height: 4rem;
+    margin-top: 1rem;
 }
 
 a:hover {
