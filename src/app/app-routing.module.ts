@@ -10,27 +10,42 @@ import { SoftwareProjectComponent } from './software-project/software-project.co
 const routes: Routes = [
   {
     path: '',
-    component: HomeComponent
+    pathMatch: 'full',
+    redirectTo: '/home'
+  },
+  {
+    path: 'home',
+    component: HomeComponent, 
+    data: {animation: 'Home'}
   },
   {
     path: 'Contact',
-    component: ContactComponent
+    component: ContactComponent,
+    data: {animation: 'Contact'}
   },
   {
     path: 'GraphicDesign',
-    component: GraphicDesignComponent
+    component: GraphicDesignComponent,
+    data: {animation: 'GraphicDesign'}
+
   },
   {
     path: 'Photography',
-    component: PhotographyComponent
+    component: PhotographyComponent,
+    data: {animation: 'Photography'}
+
   },
   {
     path: 'SocialMedia',
-    component: SocialMediaComponent
+    component: SocialMediaComponent,
+    data: {animation: 'SocialMedia'}
+
   },
   {
     path: 'SoftwareProject',
-    component: SoftwareProjectComponent
+    component: SoftwareProjectComponent,
+    data: {animation: 'SoftwareProject'}
+
   }
 ];
 

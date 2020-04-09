@@ -22,7 +22,7 @@
       <h2>Menu</h2>
       <ul>
         <li><a routerLink='' routerLinkActive="active" (click)="sidenav.close()">Home</a></li>
-        <li><a routerLink='/SoftwareProject' routerLinkActive="active" (click)="sidenav.close()">Software Project</a></li>
+        <li><a routerLink='/SoftwareProject' routerLinkActive="active" (click)="sidenav.close()">Software Projects</a></li>
         <li><a routerLink='/GraphicDesign' routerLinkActive="active" (click)="sidenav.close()">Graphic Design</a></li>
         <li><a routerLink='/SocialMedia' routerLinkActive="active" (click)="sidenav.close()">Social Media</a></li>
         <li><a routerLink='/Photography' routerLinkActive="active" (click)="sidenav.close()">Photography</a></li>
@@ -31,10 +31,13 @@
     </mat-sidenav>
     
     <mat-sidenav-content>
-        <router-outlet></router-outlet>
+      <div [@routeAnimations]="o && o.activatedRouteData 
+      && o.activatedRouteData['animation']">
+        <router-outlet #o="outlet"></router-outlet>
+      </div>
     </mat-sidenav-content>
   
   </mat-sidenav-container>
-  
+
   <app-footer></app-footer>
 </body>
