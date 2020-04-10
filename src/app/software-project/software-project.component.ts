@@ -29,6 +29,13 @@ export class SoftwareProjectComponent implements OnInit {
     title: "Movies out on Theater",
     desc: "Angular with RESTful API",
     url: "https://jo15on.netlify.com/",
+    full: "It's a fun trivia game on Marvel and DC comics in which we utilized arrays to create questions and answers for users to figure out."
+  },
+  {
+    image: "assets/superhero_trivia.png",
+    title: "Superhero Trivia",
+    desc: "Angular",
+    url: "https://superherotrivia.netlify.com/",
     full: "This application is about educating users on what movies are out on theater and the plot of the movies. We also have search criteria to help user narrow down the type of movies they want to watch as well as favorite for the movies they are interested in watching for the future. "
   }
   ];
