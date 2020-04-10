@@ -23,11 +23,17 @@ export class SoftwareProjectComponent implements OnInit {
     desc: "HTML/CSS/JavaScript",
     url: "https://bykerbry.github.io/Budget-Buddy/",
     full: "It's a clean and simple user application on how to utilize their income to create a weekly budget and inputting expenses to update their budget. In the end, expenses report is generated to show how well they're spending money on a weekly basis."
+  },
+  {
+    image: "assets/moviesAPI.png",
+    title: "Movies out on Theater",
+    desc: "Angular with RESTful API",
+    url: "https://jo15on.netlify.com/",
+    full: "This application is about educating users on what movies are out on theater and the plot of the movies. We also have search criteria to help user narrow down the type of movies they want to watch as well as favorite for the movies they are interested in watching for the future. "
   }
   ];
 
   constructor() { 
-    console.log(this.projects);
   }
 
   ngOnInit() : void {
