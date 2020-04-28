@@ -40,7 +40,7 @@ export class SoftwareProjectComponent implements OnInit {
   },
   {
     image: "assets/pizzaorder.png",
-    title: "Pizza Order",
+    title: "Pizza Cart",
     desc: "Angular with Node/Express",
     url: "http://pizza-order.s3-website.us-east-2.amazonaws.com/",
     full: "I did a personal project to demonstrate that I can utilize Node/Express to call for Pizza Menu in which I can push the item into the shopping cart while updating subTotal of the shopping cart."
