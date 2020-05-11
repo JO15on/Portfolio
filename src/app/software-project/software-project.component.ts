@@ -44,6 +44,13 @@ export class SoftwareProjectComponent implements OnInit {
     desc: "Angular with Node/Express",
     url: "http://pizza-order.s3-website.us-east-2.amazonaws.com/",
     full: "I did a personal project to demonstrate that I can utilize Node/Express to call for Pizza Menu in which I can push the item into the shopping cart while updating subTotal of the shopping cart."
+  },
+  {
+    image: "assets/calculator_react.png",
+    title: "Cacluator",
+    desc: "React",
+    url: "http://calculator-react.s3-website.us-east-2.amazonaws.com/",
+    full: "I used my time during stay-at-home order to learn about React and created a Calculator app in a tutorial in which I modified the functionality code of a Calculator due to a fatal eval function as well as change the backspace code in order to make it work"
   }
   ];
 
