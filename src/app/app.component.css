@@ -3,7 +3,7 @@ body {
 }
 
 nav {
-    background: dimgray;
+    background: rgba(0, 0, 0, .9);
     display: flex;
     justify-content: space-between;
 }   
@@ -44,7 +44,7 @@ a:hover {
 }
 
 .active {
-    color: black;
+    color: gray;
 }
 
 mat-icon {
@@ -93,7 +93,7 @@ h2 {
 }
 
 mat-sidenav-container {
-    margin-bottom: 10em;
+    margin-bottom: 8em;
 }
 
 @media only screen and (min-width: 600px) {

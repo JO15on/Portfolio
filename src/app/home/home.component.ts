@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  imgPath="url('assets/bighouse.jpg')";
+  imgPath="url('assets/Jon_SM.jpg')";
 
   constructor() { }
 

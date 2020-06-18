@@ -7,9 +7,38 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GraphicDesignComponent implements OnInit {
 
-  constructor() { }
+  public Category = [{name: 'Facebook'}, {name: 'Twitter'}, {name: 'Instagram'}, {name: 'Flyer'}];
+
+  public Image = [
+    {Name: 'Facebook', image: 'assets/nit_2nd_round.jpg'},
+    {Name: 'Facebook', image: 'assets/nit_final_score.jpg'},
+    {Name: 'Twitter', image: 'assets/patroit_day.jpg'},
+    {Name: 'Facebook', image: 'assets/pregame.jpg"'},
+    {Name: 'Flyer', image: 'assets/get_on_the_bus.jpg'},
+    {Name: 'Twitter', image: 'assets/senior_day_soccer.png'},
+    {Name: 'Facebook', image: 'assets/senior_day_volleyball.jpg'},
+    {Name: 'Twitter', image: 'assets/udm_gameday.jpg'},
+    {Name: 'Instagram', image: 'assets/winning_streak.jpg'},
+    {Name: 'Flyer', image: 'assets/udm_flyer.jpg'}
+  ];
+
+  public CategoryDetails: object = [];
+
+  constructor() { 
+    this.getCategory();
+  }
 
   ngOnInit() {
   }
 
+  getCategory(){
+    return this.Category;
+  }
+
+  SearchCategory(name : string){
+    let obj = this.Category.filter(m => m.name == name);
+    this.CategoryDetails = obj;
+    console.log(this.CategoryDetails);
+    return this.CategoryDetails;
+  }
 }

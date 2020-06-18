@@ -5,8 +5,14 @@
     overflow: hidden;
 } */
 body {
-    background-color: black;
+    background: 
+        linear-gradient(
+            rgba(0, 0, 0, .85),
+            rgba(0, 0, 0, .85)
+        ),
+        url('/assets/Jon_SM.jpg') no-repeat fixed center;
     color: white;
+    background-size: cover;
 }
 
 .home {
@@ -20,8 +26,8 @@ body {
 }
 
 .about {
-    height: 380px;
-    margin-bottom: 850px;
+    height: 500px;
+    /* margin-bottom: 300px; */
 }
 
 h1 {
@@ -76,7 +82,8 @@ ul {
 }
 
 .skills {
-    margin-bottom: 6rem;
+    margin-top: 2rem;
+    margin-bottom: 10rem;
 }
 
 .contact {
@@ -102,7 +109,6 @@ a {
 
     .about {
         height: 575px;
-        margin-bottom: 50px;
     }
 
     .me {

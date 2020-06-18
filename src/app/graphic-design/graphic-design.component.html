@@ -3,15 +3,14 @@
         <h1>Graphic Design</h1>
     </div>
     <div class="graphic">
-        <img src="assets/nit_2nd_round.jpg"/>
-        <img src="assets/nit_final_score.jpg"/>
-        <img class="unblur" src="assets/patroit_day.jpg"/>
-        <img src="assets/pregame.jpg"/>
-        <img src="assets/get_on_the_bus.jpg"/>
-        <img class="unblur" src="assets/senior_day_soccer.png"/>
-        <img src="assets/senior_day_volleyball.jpg"/>
-        <img src="assets/udm_gameday.jpg"/>
-        <img src="assets/winning_streak.jpg"/>
-        <img src="assets/udm_flyer.jpg"/>
+        <select #catSelect (change)="SearchCategory(catSelect.value)">
+            <option *ngFor="let cat of Category | keyvalue">{{cat.value}}</option>
+        </select>
     </div>
+<!-- 
+    <div *ngIf="Category.name(cat.key)">
+        <h5>{{cat.name}}</h5>
+        <img *ngFor="let cat of Category" src="{{cat.image}}"/>
+    </div> -->
+
 </body>

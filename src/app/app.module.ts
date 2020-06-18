@@ -21,6 +21,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatInputModule } from '@angular/material/input'
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { ProjectComponent } from './software-project/project/project.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -46,7 +47,8 @@ import { ProjectComponent } from './software-project/project/project.component';
     MatFormFieldModule,
     MatInputModule,
     LayoutModule,
-    NgxTwitterTimelineModule
+    NgxTwitterTimelineModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
