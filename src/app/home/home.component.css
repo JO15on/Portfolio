@@ -1,9 +1,7 @@
-/* .container {
-    position: relative;
-    width: 100vw;
-    max-height: 100vh;
-    overflow: hidden;
-} */
+.container {
+    height: 100%;
+}
+
 body {
     background: 
         linear-gradient(
