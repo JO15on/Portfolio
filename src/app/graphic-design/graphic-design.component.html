@@ -11,13 +11,16 @@
         </select>
         <div *ngIf="catName" class="graphic2">
             <h2>{{catName}}</h2>
-            <section *ngFor="let img of Image | keyvalue">
-                <section *ngIf="isObject(img.value)">
-                    <section *ngFor="let imgKey1 of img.value | keyvalue">
-                        <img *ngIf="imgKey1.key == 'Name' && imgKey1.value == catName" src="{{img.value.image}}"/>
+            <div class="graphic3">
+                <section *ngFor="let img of Image | keyvalue">
+                    <section *ngIf="isObject(img.value)">
+                        <section *ngFor="let imgKey1 of img.value | keyvalue">
+                            <img *ngIf="imgKey1.key == 'Name' && imgKey1.value == catName" src="{{img.value.image}}"/>
+                        </section>
                     </section>
                 </section>
-            </section>
+    
+            </div>
         </div>
     </div>
 </body>

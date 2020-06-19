@@ -14,10 +14,8 @@ export class GraphicDesignComponent implements OnInit {
   public Image = [
     {Name: 'Facebook', image: 'assets/nit_2nd_round.jpg'},
     {Name: 'Facebook', image: 'assets/nit_final_score.jpg'},
-    {Name: 'Twitter', image: 'assets/patroit_day.jpg'},
     {Name: 'Facebook', image: 'assets/pregame.jpg'},
     {Name: 'Flyer', image: 'assets/get_on_the_bus.jpg'},
-    {Name: 'Twitter', image: 'assets/senior_day_soccer.png'},
     {Name: 'Facebook', image: 'assets/senior_day_volleyball.jpg'},
     {Name: 'Twitter', image: 'assets/udm_gameday.jpg'},
     {Name: 'Instagram', image: 'assets/winning_streak.jpg'},
@@ -38,7 +36,7 @@ export class GraphicDesignComponent implements OnInit {
   }
 
   isObject(value) {
-    debugger;
+    // debugger;
     return typeof value === 'object' ? true : false
   }
 

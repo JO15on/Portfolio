@@ -60,10 +60,9 @@ h2 {
 }
 
 p {
-    font-size: 1.5rem;
-    letter-spacing: 3px;
-    line-height: 35px;
     text-align: center;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
 h3 {
@@ -122,6 +121,12 @@ a {
     .skillset {
         margin-left: 1rem;
         margin-right: 1rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+        letter-spacing: 3px;
+        line-height: 35px;
     }
 }
 
