@@ -16,12 +16,24 @@
     height: 8rem;
 }
 
+.email:hover {
+    transform: scale(1.5);
+}
+
 .phone {
     height: 8rem;
 }
 
+.phone:hover {
+    transform: scale(1.5);
+}
+
 .resume {
     height: 15rem;
+}
+
+.resume:hover {
+    transform: scale(1.5);
 }
 
 @media only screen and (min-width: 600px) {

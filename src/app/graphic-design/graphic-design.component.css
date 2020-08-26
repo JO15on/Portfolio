@@ -1,4 +1,4 @@
-body {
+/* body {
     height: 100vh;
 }
 
@@ -35,13 +35,35 @@ img {
     margin: 1rem 1rem 0 1rem;
     height: 13rem;
     box-shadow: 2px 2px black;
+} */
+
+body {
+    height: 150%;
+    overflow: hidden;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.graphic {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    margin: 1rem 1rem 0 1rem;
+    height: 15em;
+    box-shadow: 2px 2px gray;
 }
 
 @media only screen and (min-width: 600px){
-
-    body {
-        height: 130vh;
-    }
 
     img {
         height: 25rem;
