@@ -1,0 +1,23 @@
+img {
+    width: 15rem;
+    margin-bottom: 1em;
+}
+
+.project {
+    width: 10rem;
+}
+
+@media only screen and (min-width: 1024px){
+    .image {
+        width: 30rem;
+    }
+
+    img {
+        width: 31rem;
+        margin-bottom: 5em;
+    }
+
+    .project {
+        width: 40rem;
+    }
+}
