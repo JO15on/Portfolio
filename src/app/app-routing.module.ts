@@ -6,6 +6,7 @@ import { GraphicDesignComponent } from './graphic-design/graphic-design.componen
 import { PhotographyComponent } from './photography/photography.component';
 import { SocialMediaComponent } from './social-media/social-media.component';
 import { SoftwareProjectComponent } from './software-project/software-project.component';
+import { UXComponent } from './ux/ux.component';
 
 const routes: Routes = [
   {
@@ -17,6 +18,11 @@ const routes: Routes = [
     path: 'home',
     component: HomeComponent, 
     data: {animation: 'Home'}
+  },
+  {
+  path: 'UXProjects',
+  component: UXComponent, 
+  data: {animation: 'UXProjects'}
   },
   {
     path: 'Contact',

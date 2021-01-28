@@ -20,8 +20,12 @@ import { MatIconModule, } from '@angular/material/icon';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatInputModule } from '@angular/material/input'
 import { MatFormFieldModule } from '@angular/material/form-field';
+import {MatGridListModule} from '@angular/material/grid-list';
 import { ProjectComponent } from './software-project/project/project.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { UXComponent } from './ux/ux.component';
+import { UxworkComponent } from './ux/uxwork/uxwork.component';
+import { UxdetailComponent } from './ux/uxdetail/uxdetail.component';
 
 
 
@@ -35,7 +39,10 @@ import { ReactiveFormsModule } from '@angular/forms';
     ContactComponent,
     PhotographyComponent,
     FooterComponent,
-    ProjectComponent
+    ProjectComponent,
+    UXComponent,
+    UxworkComponent,
+    UxdetailComponent
   ],
   imports: [
     BrowserModule,
@@ -48,7 +55,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     MatInputModule,
     LayoutModule,
     NgxTwitterTimelineModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

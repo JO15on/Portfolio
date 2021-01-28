@@ -1,0 +1,26 @@
+.container {
+    position: relative;
+    text-align: center;
+}
+
+.image {
+    height: 7rem;
+}
+
+.img-caption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: large;
+    font-weight: bold;
+}
+
+p {
+    font-size: medium;
+}

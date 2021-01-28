@@ -1,0 +1,14 @@
+<body>
+    <div class="project" *ngFor="let project of projects">
+        <h2>{{project.title}}</h2>
+        <h3>{{project.sub_title}}</h3>
+        <div class="project_type">
+            <p>{{project.desc}}</p>
+            <div class="image">
+                <img src="{{project.image}}">
+                <img src="{{project.image2}}">
+                <img src="{{project.image3}}">    
+            </div>
+        </div>
+    </div>
+</body>
