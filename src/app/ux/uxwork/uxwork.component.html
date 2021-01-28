@@ -1,18 +1,15 @@
-<div class="container">
+<div class="container" #top>
     <div class="img-thumb">
         <img class="image" src="{{work.image}}"/>
         <div class="img-caption">
             <h3>{{work.title}}</h3>
-            <p>{{work.view}}</p>
+            <a (click)="openProject(work.index)"><p>{{work.view}}</p></a>
         </div>
     </div> 
 
     <div class="work">
-        <div *ngIf="show" (click)="openProject()">
-            <app-uxdetail></app-uxdetail>
-        </div>
         <div>
-            <button class="to_top" (click)="scrollToElement(0)">Return to Top</button>
+            <app-uxdetail *ngIf="show" [index]="work.index"></app-uxdetail>
         </div>
     </div>
 </div>

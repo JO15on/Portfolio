@@ -13,17 +13,20 @@ export class UXComponent implements OnInit {
     {
       image: "assets/GReen_logo.png",
       title: "GReen",
-      view: "view"
+      view: "view",
+      index: 0
     },
     {
       image: "assets/Tulsa.png",
       title: "University of Tulsa",
-      view: "view"
+      view: "view",
+      index: 1
     },
     {
       image: "assets/UDM.png",
       title: "University of Detroit Mercy",
-      view: "view"
+      view: "view",
+      index: 2
     },
   ];
 

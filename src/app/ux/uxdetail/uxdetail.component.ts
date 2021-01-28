@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { IDetail } from 'src/app/detail';
 
 @Component({
@@ -7,6 +7,8 @@ import { IDetail } from 'src/app/detail';
   styleUrls: ['./uxdetail.component.css']
 })
 export class UxdetailComponent implements OnInit {
+
+  @Input() index: number;
 
   projects : IDetail[] = [
     {
@@ -21,7 +23,7 @@ export class UxdetailComponent implements OnInit {
       title: "University of Tulsa",
       sub_title: "UX Design - Wireframing, Partner Agency Collaboration, Usability Testing, Database Analytics, User Interface Design and User Flows",
       image: "assets/Tulsa_branding.png",
-      image2: "assets/Tulsa_website.png",
+      image2: "assets/Tulsa_Website.png",
       image3: "assets/Tulsa_mobile.png",
       desc: "I evaluated existing features to identify the most relevant info in the context of the website home screen by pulling out data from a 3rd party system. I collaborated with the software developer from CBS Sports Digital, Communications Department, and the Marketing Department on wireframing the design. While wireframing, we did usability testing with the senior administrators and fans to determine the effectiveness of the wireframing design. As we get closer to finalizing our design, Sketch app was utilized for the early look of the design and functionality of the website then utilize our users to finalize our website design before handing it over to the software developer."
     },
