@@ -11,7 +11,7 @@ export class UXComponent implements OnInit {
 
   works : IWork[] = [
     {
-      image: "assets/GR_logo.png",
+      image: "assets/GR_logo.jpg",
       title: "GReen",
       view: "view",
       index: 0
