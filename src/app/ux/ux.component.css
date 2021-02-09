@@ -23,9 +23,6 @@
     flex-direction: row;
     margin: 1rem;
     padding: 1rem;
-    flex: 1;
-    /* background-color: white; */
-    /* max-width: 50%; */
 }
 
 @media only screen and (min-width: 768px){
