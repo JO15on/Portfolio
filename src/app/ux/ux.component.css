@@ -18,6 +18,9 @@
 }
 
 .ux_work {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     margin: 1rem;
     padding: 1rem;
 }
