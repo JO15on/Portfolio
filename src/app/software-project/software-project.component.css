@@ -17,20 +17,22 @@
 .appProject {
     display: flex;
     flex-wrap: wrap;
-    max-width: 78%;
-    margin: 1rem;
+    margin: 0 auto;
+    margin-bottom: 3em;
     padding: 1rem;
+    max-width: 35%;
     border-radius: 1rem;
-    background: #ffffff80;
+    background-color: #ffffff80;
     box-shadow: 0px 0px 3px #AAA;
+
 }
 
 
 @media only screen and (min-width: 600px){
   
-    .appProject{
+    /* .appProject{
         max-width: 30%;
-    }
+    } */
 
 }
 
