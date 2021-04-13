@@ -42,7 +42,7 @@ export class SoftwareProjectComponent implements OnInit {
     image: "assets/calculator_react.png",
     title: "Calculator",
     desc: "React",
-    url: "http://calculator-react.s3-website.us-east-2.amazonaws.com/",
+    url: "https://react-project-calc.netlify.app/",
     full: "I used my time during stay-at-home order to learn about React and created a Calculator app in a tutorial in which I modified the functionality code of a Calculator due to a fatal eval function as well as change the backspace code in order to make it work"
   }
   ];
