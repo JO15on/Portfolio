@@ -1,0 +1,36 @@
+.footer {
+    position: fixed;
+    bottom: 0;
+    padding: 0;
+    margin: 0 auto;
+    z-index: 2;
+    box-shadow: 8px 0 6px -6px black;
+    background: white;
+    margin-top: 10px;
+    width: 100%;
+}
+
+footer {
+    display: flex;
+    font-size: 10px;
+    margin-top: 10px;
+    flex-direction: row;
+    z-index: 5;
+    justify-content: center;
+    align-items: center;
+}
+
+.github {
+    height: 4rem;
+    margin-top: 1rem;
+}
+
+.linkedin {
+    height: 4rem;
+    margin-top: 1rem;
+}
+
+a:hover {
+    color: gray;
+    opacity: .5;
+}

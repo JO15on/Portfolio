@@ -1,0 +1,15 @@
+<div class="container" #top>
+    <div class="img-thumb">
+        <img class="image" src="{{work.image}}"/>
+        <div class="img-caption">
+            <h3>{{work.title}}</h3>
+            <a (click)="openProject(work.index)"><p>{{work.view}}</p></a>
+        </div>
+    </div> 
+
+    <div class="work">
+        <div>
+            <app-uxdetail *ngIf="show" [index]="work.index"></app-uxdetail>
+        </div>
+    </div>
+</div>
