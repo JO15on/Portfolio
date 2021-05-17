@@ -17,8 +17,8 @@
 .appProject {
     display: flex;
     flex-wrap: wrap;
-    max-width: 78%;
-    margin: 1rem;
+    max-width: 75%;
+    margin: 0 auto 3em;
     padding: 1rem;
     border-radius: 1rem;
     background: #ffffff80;
@@ -26,10 +26,10 @@
 }
 
 
-@media only screen and (min-width: 600px){
+@media only screen and (min-width: 768px){
   
     .appProject{
-        max-width: 30%;
+        max-width: 65%;
     }
 
 }
@@ -40,6 +40,10 @@
         display: flex;
         justify-content: space-between;
         width: 100%;
+    }
+
+    .appProject{
+        max-width: 33%;
     }
 }
 

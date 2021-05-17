@@ -40,11 +40,11 @@ a {
 }
 
 a:hover {
-    color: gray;
+    color: yellow;
 }
 
 .active {
-    color: gray;
+    color: yellow;
 }
 
 mat-icon {
