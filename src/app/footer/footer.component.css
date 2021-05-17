@@ -1,4 +1,4 @@
-.footer {
+/* .footer {
     bottom: 0;
     padding: 0;
     margin: 0 auto;
@@ -32,4 +32,24 @@ footer {
 a:hover {
     color: gray;
     opacity: .5;
+} */
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    z-index: 2;
+    height: 20px;
+}
+
+.github {
+    height: 4rem;
+}
+
+.linkedin {
+    height: 4rem;
 }

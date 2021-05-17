@@ -39,17 +39,10 @@ export class SoftwareProjectComponent implements OnInit {
     full: "While I was learning on the Angular framework, Grand Circus had us to do a fun project to gain a deeper understanding of how Angular works.  This app is a fun trivia game on Marvel and DC comics in which we utilized arrays to create questions and answers for users to figure out."
   },
   {
-    image: "assets/pizzaorder.png",
-    title: "Pizza Cart",
-    desc: "Angular with Node/Express",
-    url: "http://pizza-order.s3-website.us-east-2.amazonaws.com/",
-    full: "During the stay-at-home order, I did a personal project to demonstrate that I can utilize Node/Express to call for Pizza Menu in which I can push the item into the shopping cart while updating subTotal of the shopping cart."
-  },
-  {
     image: "assets/calculator_react.png",
     title: "Calculator",
     desc: "React",
-    url: "http://calculator-react.s3-website.us-east-2.amazonaws.com/",
+    url: "https://react-project-calc.netlify.app/",
     full: "I used my time during stay-at-home order to learn about React and created a Calculator app in a tutorial in which I modified the functionality code of a Calculator due to a fatal eval function as well as change the backspace code in order to make it work"
   }
   ];
